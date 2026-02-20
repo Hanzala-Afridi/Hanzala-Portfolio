@@ -573,7 +573,7 @@ export default function Home() {
                     <div className="relative overflow-hidden rounded-2xl shadow-2xl group">
                       <Image
                         src={experience.image}
-                        alt={experience.company}
+                        alt={experience.company || 'Default company name'}                        
                         width={600}
                         height={400}
                         className="object-cover w-full h-80 group-hover:scale-110 transition-transform duration-500"
