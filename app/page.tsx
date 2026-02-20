@@ -382,52 +382,50 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen">
-      {/* HOME SECTION */}
-      <section id="home" className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-teal-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Content */}
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-800 leading-tight">
-                  Hi, I'm{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
-                    Hanzala
-                  </span>
-                </h1>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-gray-700 leading-snug max-w-3xl">
-                  Freelance | Software & Automation Engineer | Technopreneur | Developing Innovative Agentic AI & Robotics Solutions | Delivering Innovative Solutions | Computer Engineering Technology Student
-                </h3>
-
-               
-              </div>
-              
-              <SocialButtons />
+  <div className="min-h-screen">
+    {/* HOME SECTION */}
+    <section id="home" className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-teal-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side - Content */}
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-800 leading-tight">
+                Hi, I'm{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-600">
+                  Hanzala
+                </span>
+              </h1>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-gray-700 leading-snug max-w-3xl">
+                Freelance | Software & Automation Engineer | Technopreneur | Developing Innovative Agentic AI & Robotics Solutions | Delivering Innovative Solutions | Computer Engineering Technology Student
+              </h3>
             </div>
+            <SocialButtons />
+          </div>
 
-            {/* Right Side - Image */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl border-8 border-white">
-                  <Image
-                    src="/home.jpeg"
-                    alt="Hanzala Afridi"
-                    width={448}
-                    height={448}
-                    className="object-cover w-full h-full"
-                    priority
-                  />
-                </div>
-                {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-500 rounded-full opacity-20 animate-pulse"></div>
-                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-teal-500 rounded-full opacity-20 animate-pulse"></div>
+          {/* Right Side - Image */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl border-8 border-white">
+                <Image
+                  src="/home.jpeg"
+                  alt="Hanzala Afridi"
+                  width={448}
+                  height={448}
+                  className="object-cover w-full h-full"
+                  priority
+                />
               </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-500 rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-teal-500 rounded-full opacity-20 animate-pulse"></div>
             </div>
           </div>
         </div>
-      </section>
-
+      </div>
+    </section>
+  </div>
+);
       {/* ABOUT SECTION */}
       <section id="about" className="min-h-screen bg-gradient-to-br from-teal-50 via-white to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
@@ -572,11 +570,11 @@ export default function Home() {
                   <div className="w-full lg:w-1/2">
                     <div className="relative overflow-hidden rounded-2xl shadow-2xl group">
                       <Image
-                        src={experience.image}
-                        alt={experience.company || 'Default company name'}                        
-                        width={600}
-                        height={400}
-                        className="object-cover w-full h-80 group-hover:scale-110 transition-transform duration-500"
+                      src={experience.image}
+                      alt={experience.company || 'Default company name'} 
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-80 group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                       <div className="absolute top-6 left-6 bg-white/90 p-3 rounded-full">
